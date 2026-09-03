@@ -1,0 +1,16 @@
+<Project>
+
+  <!--
+    The Microsoft.Web.WebView2 package's Common.targets injects a reference to the WPF
+    assembly (Microsoft.Web.WebView2.Wpf.dll) into every windows-targeted project, even
+    WinForms-only consumers. That WPF assembly depends on WindowsBase 5.0.0.0 while the
+    .NET ref pack supplies 4.0.0.0, producing an unresolvable MSB3277 version conflict.
+    This library does not use WPF, so the reference is removed to keep builds warning-free.
+  -->
+  <Target Name="RemoveUnusedWebView2WpfReference" BeforeTargets="ResolveAssemblyReferences">
+    <ItemGroup>
+      <Reference Remove="@(Reference)" Condition="$([System.String]::Copy('%(Identity)').Contains('WebView2.Wpf'))" />
+    </ItemGroup>
+  </Target>
+
+</Project>
