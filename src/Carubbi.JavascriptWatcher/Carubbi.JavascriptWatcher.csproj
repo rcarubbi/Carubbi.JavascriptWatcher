@@ -5,7 +5,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <RootNamespace>Carubbi.JavascriptWatcher</RootNamespace>
     <AssemblyName>Carubbi.JavascriptWatcher</AssemblyName>
-    <Version>3.0.0</Version>
+    <Version>3.0.1</Version>
     <Description>Declarative policy engine and automation layer for WebView2 JavaScript dialogs (alert, confirm) and window.open routing</Description>
     <PackageTags>javascript webview2 browser automation interop</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
