@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/Carubbi.JavascriptWatcher/Carubbi.JavascriptWatcher.csproj" />
+  <Project Path="tests/Carubbi.JavascriptWatcher.Tests/Carubbi.JavascriptWatcher.Tests.csproj" />
+</Solution>
